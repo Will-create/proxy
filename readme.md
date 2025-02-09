@@ -20,8 +20,8 @@ The server app must be hosted on your server and must be available via HTTP prot
 
 __Installation__:
 
-- install Node.js Platform
-- install dependencies:
+- install [Node.js Platform](https://nodejs.org/en/download)
+- install dependencies (only Total.js v5):
 
 ```sh
 cd server
@@ -36,8 +36,8 @@ The client app connects to the proxy server app. After the client connects, the 
 
 __Installation__:
 
-- install Node.js Platform
-- install dependencies:
+- install [Node.js Platform](https://nodejs.org/en/download)
+- install dependencies (only Total.js v5):
 
 ```sh
 cd server
