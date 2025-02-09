@@ -1,0 +1,21 @@
+{
+  "name": "proxyclient",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/totaljs/proxy"
+  },
+  "dependencies": {
+    "total5": "beta"
+  },
+  "keywords": [
+    "proxy",
+    "client"
+  ],
+  "author": "Total.js",
+  "contributors": [
+    "Peter Širka"
+  ],
+  "license": "MIT"
+}
