@@ -16,7 +16,7 @@ __Requirements__
 
 ## Server
 
-The server app must be hosted on your server and must be available via HTTP protocol because the client will connect to it via WebSocket.
+The server app must be hosted on your server and must be available via HTTP protocol because the client will connect to it via WebSocket. This app is a standard Total.js web app.
 
 __Installation__:
 
