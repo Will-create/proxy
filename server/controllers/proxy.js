@@ -58,6 +58,8 @@ function socket($) {
 		switch (type) {
 			case 0: // init
 				let tmp = JSON.parse(data.toString('utf8'));
+				delete tmp.headers.connection;
+				delete tmp.headers['content-length'];
 				ctrl.res.writeHead(tmp.status, tmp.headers);
 				break;
 			case 1: // data
