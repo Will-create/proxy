@@ -96,6 +96,9 @@ function proxy(ctrl) {
 	obj.method = ctrl.req.method;
 	obj.ip = ctrl.ip;
 
+	obj.headers['x-proxy'] = 'Total.js Proxy';
+	delete obj.headers.connection;
+
 	let buffer = Buffer.from(JSON.stringify(obj), 'utf8');
 	let id = Buffer.alloc(4);
 	let index = Messages++;
