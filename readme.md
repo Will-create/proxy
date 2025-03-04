@@ -40,7 +40,7 @@ __Installation__:
 - install dependencies (only Total.js v5):
 
 ```sh
-cd server
+cd client
 npm install
 node client.js http://yourserverproxy.com 8000
 # node client.js http://yourserverproxy.com 127.0.0.1:8000
