@@ -34,18 +34,48 @@ npm start
 
 The client app connects to the proxy server app. After the client connects, the server will "redirect" all HTTP requests to your local port.
 
-__Installation__:
+### Installation
 
-- install [Node.js Platform](https://nodejs.org/en/download)
-- install dependencies (only Total.js v5):
+1. Install [Node.js Platform](https://nodejs.org/en/download)
+2. Install Total.js v5 globally:
+
+   ```sh
+   npm install -g total5
+   ```
+
+### Usage
+
+To start the proxy client, use the following command:
 
 ```sh
+total5 proxyclient SERVER_ENDPOINT LOCAL_PORT
+```
+
+For example:
+
+```sh
+total5 proxyclient https://localhost.zapwize.com 8000
+```
+
+This will connect to the proxy server and forward all HTTP requests to your local port 8000.
+
+### Alternative Method (Legacy)
+
+If you prefer to install dependencies locally and run the script manually:
+
+```sh
+# Clone this repository and follow the steps below
 cd client
 npm install
-node client.js http://yourserverproxy.com 8000
-# node client.js http://yourserverproxy.com 127.0.0.1:8000
+node client.js SERVER_ENDPOINT LOCAL_PORT
+# or
+node client.js SERVER_ENDPOINT LOCAL_HOST:LOCAL_PORT
+```
 
-# Help:
-# node client.js SERVER_ENDPOINT LOCAL_PORT
-# node client.js SERVER_ENDPOINT LOCAL_HOST:LOCAL_PORT
+Example:
+
+```sh
+node client.js http://yourserverproxy.com 8000
+# or
+node client.js http://yourserverproxy.com 127.0.0.1:8000
 ```
